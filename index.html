@@ -12,6 +12,7 @@
         height: 100vh;
         background: linear-gradient(to bottom, #270000 0%, #0C0000 33%, #0C0000 100%);
     }
+    
     #particles-js {
         position: absolute;
         width: 100%;
@@ -23,6 +24,7 @@
         background-size: cover;
         background-position: 50% 50%;
     }
+    
     .count-particles {
         background: #000022;
         position: absolute;
@@ -39,14 +41,17 @@
         font-weight: bold;
         border-radius: 0 0 3px 3px;
     }
+    
     .js-count-particles {
         font-size: 1.1em;
     }
+    
     #stats, .count-particles {
         -webkit-user-select: none;
         margin-top: 5px;
         margin-left: 5px;
     }
+    
     #stats {
         border-radius: 3px 3px 0 0;
         overflow: hidden;
@@ -75,8 +80,13 @@
         text-decoration: none;
         color: #ff0000;
     }
-
-
+    .link {
+        cursor: url('https://github.com/DeathWrench/deathwrench.github.io/raw/main/Cursors/aero_fuckyaself.cur'), auto;
+    }
+    .link:hover {
+        text-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+    }
+    
     .content span {
         position: relative;
         display: inline-block;
@@ -110,16 +120,17 @@
 
     <!-- Stuff -->
     <div class="content" style="text-align: center;">
-        <h3 style="color: #760000;">Mods and stuff:</h3><br>
-            <a href="https://next.nexusmods.com/profile/DeathWrench/mods?sortBy=new" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Nexusmods</a><br><br>
-            <a href="https://gamebanana.com/members/submissions/mods/1996527?" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Gamebanana</a><br><br>
-            <a href="https://github.com/DeathWrench?tab=repositories" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Github</a><br><br><br>
-        <h3 style="color: #760000;">Mods for specific games:</h3><br>
-            <a href="https://thunderstore.io/c/lethal-company/p/DeathWrench/" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Lethal Company Mods</a><br><br>
-            <a href="https://mod.io/g/drg/u/deathwrench" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Deep Rock Galactic Mods</a><br><br>
-            <a href="https://www.gamemaps.com/profile/999162" style="text-shadow: 0 0 30px rgba(255, 0, 0, 0.7); text-decoration: none !important;">Left 4 Dead 2 Mods</a><br><br>
+     <h3 style="color: #760000;">Mods and stuff:</h3><br>
+        <a href="https://next.nexusmods.com/profile/DeathWrench/mods?sortBy=new" class="link" style="text-decoration: none !important;">Nexusmods</a><br><br>
+        <a href="https://gamebanana.com/members/submissions/mods/1996527?" class="link" style="text-decoration: none !important;">Gamebanana</a><br><br>
+        <a href="https://github.com/DeathWrench?tab=repositories" class="link" style="text-decoration: none !important;">Github</a><br><br><br>
+     <h3 style="color: #760000;">Mods for specific games:</h3><br>
+        <a href="https://thunderstore.io/c/lethal-company/p/DeathWrench/" class="link" style="text-decoration: none !important;">Lethal Company Mods</a><br><br>
+        <a href="https://mod.io/g/drg/u/deathwrench" class="link" style="text-decoration: none !important;">Deep Rock Galactic Mods</a><br><br>
+        <a href="https://www.gamemaps.com/profile/999162" class="link" style="text-decoration: none !important;">Left 4 Dead 2 Mods</a><br><br>
     </div>
-    <h2 style="font-family: 'Press Start 2P', cursive; color: #760000; text-align: right; position: absolute; bottom: 0; right: 0;">DeathWrench</h2><br>
+     <h2 style="font-family: 'Press Start 2P', cursive; color: #760000; text-align: right; position: absolute; bottom: 0; right: 0;">DeathWrench</h2><br>
+
     
     <!-- stats - count particles -->
     <!--<div class="count-particles">
