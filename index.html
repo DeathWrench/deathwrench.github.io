@@ -11,14 +11,18 @@
         padding: 0;
         height: 100vh;
         background: linear-gradient(to bottom, #270000 0%, #0C0000 33%, #0C0000 100%);
-        /* Prevent scrolling*/
+        /* Prevent scrolling */
         overflow: hidden;
         /* Disable pinch zooming on touch devices */
-        touch-action: none; 
+        touch-action: none;
         /* Prevent zooming */
-        max-width: 100%; 
-        min-width: 100%;
+        max-width: 100vw;
+        min-width: 100vw;
+        /* Prevent user zoom */
         user-zoom: fixed;
+        /* Disable zooming on older browsers */
+        -ms-content-zooming: none;
+        zoom: 1;
     }
     
     #particles-js {
