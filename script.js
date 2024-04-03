@@ -19,29 +19,6 @@ function createBubble() {
   bubble.style.left = left;
   bubble.style.top = top;
 
-  // Apply color animation
-  bubble.style.animationName = 'animateBubbleColor';
-  
-  // Set random animation duration and delay
-  bubble.style.animationDuration = randomInt(5, 15) + 's';
-  bubble.style.animationDelay = randomInt(0, 10) + 's';
-
-  // Set random animation timing function
-  const timingFunctions = ['ease', 'ease-in', 'ease-out', 'ease-in-out', 'linear'];
-  bubble.style.animationTimingFunction = timingFunctions[randomInt(0, timingFunctions.length - 1)];
-
-  // Set random animation direction
-  const animationDirections = ['normal', 'reverse', 'alternate', 'alternate-reverse'];
-  bubble.style.animationDirection = animationDirections[randomInt(0, animationDirections.length - 1)];
-
-  // Set random animation fill mode
-  const fillModes = ['forwards', 'backwards', 'both', 'none'];
-  bubble.style.animationFillMode = fillModes[randomInt(0, fillModes.length - 1)];
-
-  // Set random animation play state
-  const playStates = ['running', 'paused'];
-  bubble.style.animationPlayState = playStates[randomInt(0, playStates.length - 1)];
-  
   document.getElementById('bubble-container').appendChild(bubble);
 }
 
