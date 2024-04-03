@@ -85,10 +85,10 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 313,
+                    "value": Math.round(313 * window.devicePixelRatio), // Adjust particle count based on device pixel ratio
                     "density": {
                         "enable": true,
-                        "value_area": 800
+                        "value_area": Math.round(800 * window.devicePixelRatio * window.devicePixelRatio) // Adjust density based on device pixel ratio
                     }
                 },
                 "color": {
@@ -120,12 +120,12 @@
                     }
                 },
                 "size": {
-                    "value": 3.9458004845442964,
+                    "value": Math.round(3.9458004845442964 * window.devicePixelRatio), // Adjust particle size based on device pixel ratio
                     "random": true,
                     "anim": {
                         "enable": false,
                         "speed": 40,
-                        "size_min": 0.1,
+                        "size_min": 0.1 * window.devicePixelRatio, // Adjust minimum particle size based on device pixel ratio
                         "sync": false
                     }
                 },
