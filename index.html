@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animated Background with Bubbles</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS for the animated background */
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* To prevent scrollbars */
+      animation: animateBackground 10s linear infinite; /* Animation applied to the body */
+    }
+    
+    @keyframes animateBackground {
+      0% { background-color: #ff0000; } /* Start color */
+      50% { background-color: #00ff00; } /* Middle color */
+      100% { background-color: #0000ff; } /* End color */
+    }
+  </style>
 </head>
 <body>
   <div id="bubble-container">
