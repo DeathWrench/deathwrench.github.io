@@ -20,6 +20,6 @@ function createBubble() {
 }
 
 // Create bubbles
-for (let i = 0; i < 20000; i++) { // Create 200 bubbles
+for (let i = 0; i < 20000; i++) { // Create 20000 bubbles
   createBubble();
 }
