@@ -16,8 +16,10 @@ function createBubble() {
   bubble.style.backgroundColor = randomColor();
   bubble.style.animationDuration = randomInt(5, 15) + 's'; // Randomize animation duration
   bubble.style.animationDelay = randomInt(0, 10) + 's'; // Randomize animation delay
+  bubble.style.animationName = 'animateBubbleColor'; // Apply color animation
   document.getElementById('bubble-container').appendChild(bubble);
 }
+
 
 // Create bubbles
 for (let i = 0; i < 20000; i++) { // Create 20000 bubbles
