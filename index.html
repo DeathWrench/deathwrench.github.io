@@ -52,6 +52,9 @@
     }
     .content {
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 2;
         font-size: 24px;
         font-weight: bold;
@@ -61,6 +64,15 @@
         transform-origin: center;
         animation: flames 2s infinite alternate ease-in-out;
     }
+
+    .content h3 {
+        margin: 0;
+    }
+
+    .content a {
+        text-decoration: none !important;
+    }
+
 
     .content span {
         position: relative;
