@@ -54,6 +54,22 @@
         position: relative;
         z-index: 2;
     }
+
+    .content span {
+        position: relative;
+        display: inline-block;
+        transform-origin: center;
+        animation: particle-animation 2s infinite linear;
+    }
+
+    @keyframes particle-animation {
+        0% {
+            transform: translateY(0) rotate(0deg);
+        }
+        100% {
+            transform: translateY(-100px) rotate(360deg);
+        }
+    }
 </style>
 </head>
 <body>
