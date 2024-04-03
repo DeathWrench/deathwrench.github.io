@@ -1,34 +1,27 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000;
-}
-
-.bubble-container {
-  position: relative; /* Ensure bubbles are positioned relative to this container */
-  width: 100%;
-  height: 100%;
-}
-
-.bubble {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff; /* Initial bubble color */
-  animation: moveBubble 10s linear infinite, animateBubbleColor 10s linear infinite; /* Apply both animations */
-}
-
-@keyframes moveBubble {
-  0% { transform: translateY(100vh) rotate(0deg); }
-  100% { transform: translateY(-100vh) rotate(360deg); }
-}
-
-@keyframes animateBubbleColor {
-  0% { background-color: #ff0000; } /* Start color */
-  25% { background-color: #00ff00; } /* Middle color 1 */
-  50% { background-color: #0000ff; } /* Middle color 2 */
-  75% { background-color: #00ff00; } /* Middle color 1 (reversed) */
-  100% { background-color: #ff0000; } /* End color (back to start) */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Red and Black Gradient</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(to right, #8B0000 0%, #000000 50%, #8B0000 100%);
+        /* For webkit browsers */
+        background: -webkit-linear-gradient(to right, #8B0000 0%, #000000 50%, #8B0000 100%);
+        /* For Mozilla firefox */
+        background: -moz-linear-gradient(to right, #8B0000 0%, #000000 50%, #8B0000 100%);
+        /* For Opera browser */
+        background: -o-linear-gradient(to right, #8B0000 0%, #000000 50%, #8B0000 100%);
+        /* For IE (older syntax) */
+        background: -ms-linear-gradient(to right, #8B0000 0%, #000000 50%, #8B0000 100%);
+    }
+</style>
+</head>
+<body>
+    <!-- Your content here -->
+</body>
+</html>
