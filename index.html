@@ -57,6 +57,9 @@
         font-weight: bold;
         color: #ff0000; /* Particle color */
         text-transform: uppercase;
+        display: inline-block;
+        transform-origin: center;
+        animation: flames 2s infinite alternate ease-in-out;
     }
 
     .content span {
@@ -74,6 +77,16 @@
             transform: translateY(-100px) rotate(360deg);
         }
     }
+
+    @keyframes flames {
+        0% {
+            text-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+        }
+        100% {
+            text-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+        }
+    }
+    
 </style>
 </head>
 <body>
