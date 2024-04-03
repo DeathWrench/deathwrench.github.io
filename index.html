@@ -37,37 +37,6 @@
         background-position: 50% 50%;
     }
     
-    .count-particles {
-        background: #000022;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        width: 80px;
-        color: #13E8E9;
-        font-size: .8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-        border-radius: 0 0 3px 3px;
-    }
-    
-    .js-count-particles {
-        font-size: 1.1em;
-    }
-    
-    #stats, .count-particles {
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    
-    #stats {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
-    }
     .content {
         text-align: center;
         position: absolute;
@@ -75,11 +44,10 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 2;
-        font-family: 'Press Start 2P', cursive;
+        font-family: 'Shoguns Clan', cursive; /* Use Shoguns Clan font */
         font-size: 24px;
         font-weight: bold;
         color: #ff0000; /* Particle color */
-        /*text-transform: uppercase;*/
         display: inline-block;
         transform-origin: center;
     }
@@ -105,24 +73,6 @@
         transform-origin: center;
         animation: particle-animation 2s infinite linear;
     }
-
-    @keyframes particle-animation {
-        0% {
-            transform: translateY(0) rotate(0deg);
-        }
-        100% {
-            transform: translateY(-100px) rotate(360deg);
-        }
-    }
-
-    /*@keyframes flames {
-        0% {
-            text-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
-        }
-        100% {
-            text-shadow: 0 0 80px rgba(255, 0, 0, 0.9);
-        }
-    }*/
     
 </style>
 </head>
@@ -143,17 +93,8 @@
     </div>
      <h2 style="font-family: 'Press Start 2P', cursive; color: #760000; text-align: right; position: absolute; bottom: 0; right: 0;">DeathWrench</h2><br>
 
-    
-    <!-- stats - count particles -->
-    <!--<div class="count-particles">
-        <span class="js-count-particles">--</span> particles
-    </div>-->
-
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="https://raw.githubusercontent.com/DeathWrench/particles.js/master/particles.min.js"></script>
-    
-    <!-- stats.js lib -->
-    <!--script src="https://threejs.org/examples/js/libs/stats.min.js"></script>-->
 
     <script>
         particlesJS("particles-js", {
