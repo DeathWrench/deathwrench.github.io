@@ -5,91 +5,63 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeathWrench</title>
 <style>
-/* Your existing CSS styles */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, #270000 0%, #0C0000 33%, #0C0000 100%);
-}
-
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    /* background-color: #000000; */
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-.count-particles {
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    border-radius: 0 0 3px 3px;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats, .count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-/* Particle Text Animation Styles */
-.particle-text {
-    position: relative;
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff0000; /* Particle color */
-    text-transform: uppercase;
-}
-
-.particle-text span {
-    position: relative;
-    display: inline-block;
-    transform-origin: center;
-    animation: particle-animation 2s infinite linear;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-@keyframes particle-animation {
-    0% {
-        transform: translateY(0) rotate(0deg);
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom, #270000 0%, #0C0000 33%, #0C0000 100%);
     }
-    100% {
-        transform: translateY(-100px) rotate(360deg);
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        /* background-color: #000000; */
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
     }
-}
-
+    .count-particles {
+        background: #000022;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        width: 80px;
+        color: #13E8E9;
+        font-size: .8em;
+        text-align: left;
+        text-indent: 4px;
+        line-height: 14px;
+        padding-bottom: 2px;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        border-radius: 0 0 3px 3px;
+    }
+    .js-count-particles {
+        font-size: 1.1em;
+    }
+    #stats, .count-particles {
+        -webkit-user-select: none;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    #stats {
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+    }
+    .content {
+        position: relative;
+        z-index: 2;
+    }
 </style>
 </head>
 <body>
-    <!-- Particle Text -->
-    <div class="particle-text">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- Stuff -->
+    <div class="content" style="text-align: center;">
         <p><br></p>
         <p><br></p>
         <h3>Mods and stuff:</h3><br>
@@ -101,15 +73,6 @@ body {
         <a href="https://mod.io/g/drg/u/deathwrench" style="text-decoration: none !important;">Deep Rock Galactic Mods</a><br><br>
         <a href="https://www.gamemaps.com/profile/999162" style="text-decoration: none !important;">Left 4 Dead 2 Mods</a><br><br>
     </div>
-
-    <!-- Additional Content -->
-    <!--<div class="content">
-        <p><br></p>
-        <p><br></p>
-    </div>-->
-
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
     
     <!-- stats - count particles -->
     <!--<div class="count-particles">
@@ -132,6 +95,34 @@ body {
                         "value_area": Math.round(800 * window.devicePixelRatio * window.devicePixelRatio) // Adjust density based on device pixel ratio
                     }
                 },
+                "color": {
+                    "value": "#ff0000"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 3
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 40,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
                 "size": {
                     "value": Math.round(3.9458004845442964 * window.devicePixelRatio), // Adjust particle size based on device pixel ratio
                     "random": true,
@@ -142,11 +133,30 @@ body {
                         "sync": false
                     }
                 },
+                "line_linked": {
+                    "enable": false,
+                    "distance": 150,
+                    "color": "#ff0000",
+                    "opacity": 0.4,
+                    "width": 1
+                },
                 "move": {
-                    "speed": 6
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "top",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": true,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
                 }
             },
             "interactivity": {
+                "detect_on": "canvas",
                 "events": {
                     "onhover": {
                         "enable": true,
@@ -155,16 +165,55 @@ body {
                     "onclick": {
                         "enable": true,
                         "mode": "push"
-                    }
+                    },
+                    "resize": true
                 },
                 "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 80,
+                        "duration": 0.2
+                    },
                     "push": {
                         "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
                     }
                 }
             },
             "retina_detect": true
         });
+
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
     </script>
 </body>
 </html>
