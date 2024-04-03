@@ -5,7 +5,6 @@ body {
   background-color: #000;
 }
 
-/* CSS for the bubbles */
 .bubble-container {
   position: relative; /* Ensure bubbles are positioned relative to this container */
   width: 100%;
@@ -17,8 +16,8 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  animation: moveBubble 10s linear infinite;
   background-color: #fff; /* Initial bubble color */
+  animation: moveBubble 10s linear infinite, animateBubbleColor 10s linear infinite; /* Apply both animations */
 }
 
 @keyframes moveBubble {
