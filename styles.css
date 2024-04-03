@@ -17,3 +17,11 @@ body {
   0% { transform: translateY(100vh) rotate(0deg); }
   100% { transform: translateY(-100vh) rotate(360deg); }
 }
+
+@keyframes animateBubbleColor {
+  0% { background-color: #ff0000; } /* Start color */
+  25% { background-color: #00ff00; } /* Middle color 1 */
+  50% { background-color: #0000ff; } /* Middle color 2 */
+  75% { background-color: #00ff00; } /* Middle color 1 (reversed) */
+  100% { background-color: #ff0000; } /* End color (back to start) */
+}
