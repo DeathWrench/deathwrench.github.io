@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <CWeaponInfoBlob>
   <SlotNavigateOrder>
     <WeaponSlots>
@@ -44,11 +44,11 @@
           <Damage value="21.50000000" />
         </Item>
         <Item>
-          <Distance value="50.0000000" />
+          <Distance value="50.00000000" />
           <Damage value="16.00000000" />
         </Item>
         <Item>
-          <Distance value="60.0000000" />
+          <Distance value="60.00000000" />
           <Damage value="11.00000000" />
         </Item>
       </Distances>
@@ -450,8 +450,8 @@
         <HipCockStartRate value="1.80000000" />
         <HipCockStartQuickRate value="1.40000000" />
         <HipCockEndRate value="1.80000000" />
-        <HipRecoilRate value="1.20000000" />
-        <HipFireRate value="0.11000000" />
+        <HipRecoilRate value="2.00000000" />
+        <HipFireRate value="1.2000000" />
         <HipFireDelay value="0.10000000" />
         <TimeScaleHipCockRateModifier value="1.00000000" />
         <TimeScaleHipFireRateModifier value="1.00000000" />
@@ -850,7 +850,7 @@
           </UNK_MEMBER_0x6D43951C>
           <UNK_MEMBER_0x16FED869 />
           <AccuracyInfo>0x596E0ADD</AccuracyInfo>
-          <DamageFallOffInfo>0x3F00F19B</DamageFallOffInfo>
+          <DamageFallOffInfo>0x62E8F472</DamageFallOffInfo>
           <WeaponHeadShotDistance>
             <MinHeadShotDistanceAI value="1.00000000" />
             <MaxHeadShotDistanceAI value="80.00000000" />
@@ -903,22 +903,22 @@
           <DismembermentRanges>
             <Item>
               <MaxRange value="5.00000000" />
-              <DismembermentPercent value="0.50000000" />
+              <DismembermentPercent value="0.00000000" />
               <DismembermentIncrement value="1" />
             </Item>
             <Item>
               <MaxRange value="15.00000000" />
-              <DismembermentPercent value="0.25000000" />
+              <DismembermentPercent value="0.00000000" />
               <DismembermentIncrement value="1" />
             </Item>
             <Item>
               <MaxRange value="25.00000000" />
-              <DismembermentPercent value="0.15000000" />
+              <DismembermentPercent value="0.00000000" />
               <DismembermentIncrement value="1" />
             </Item>
             <Item>
               <MaxRange value="50.00000000" />
-              <DismembermentPercent value="0.10000000" />
+              <DismembermentPercent value="0.00000000" />
               <DismembermentIncrement value="1" />
             </Item>
           </DismembermentRanges>
@@ -986,12 +986,12 @@
           <FamiliarityInfo>0x6D7C4D28</FamiliarityInfo>
           <RumbleInfo>0x9EDDD16B</RumbleInfo>
           <WeaponRanges>
-            <LockOnRange value="245.00000000" />
-            <LockOnRangeInVehicle value="245.00000000" />
+            <LockOnRange value="45.00000000" />
+            <LockOnRangeInVehicle value="45.00000000" />
             <IdleLockOnRangeModifier value="1.00000000" />
             <SoftLockDurationOverride value="-1.00000000" />
-            <WeaponRange value="285.00000000" />
-            <WeaponRangeInVehicle value="285.00000000" />
+            <WeaponRange value="85.00000000" />
+            <WeaponRangeInVehicle value="85.00000000" />
             <MeleeWeaponRangeMin value="1.50000000" />
             <MeleeWeaponRangeMax value="2.00000000" />
             <MeleeWeaponRangeMaxRun value="4.00000000" />
@@ -1022,9 +1022,9 @@
             <RunAndGunCameraHash>DEFAULT_THIRD_PERSON_PED_RUN_AND_GUN_CAMERA</RunAndGunCameraHash>
             <CinematicShootingCameraHash />
             <GrappleCameraHash>DEFAULT_FOLLOW_PED_CAMERA</GrappleCameraHash>
-            <CameraFov value="50.00000000" />
-            <FirstPersonAimFovMin value="50.00000000" />
-            <FirstPersonAimFovMax value="50.00000000" />
+            <CameraFov value="45.00000000" />
+            <FirstPersonAimFovMin value="42.00000000" />
+            <FirstPersonAimFovMax value="47.00000000" />
             <FirstPersonDofSubjectMagnificationPowerFactorNear value="1.02500000" />
             <FirstPersonDofMaxNearInFocusDistance value="0.00000000" />
             <FirstPersonDofMaxNearInFocusDistanceBlendLevel value="0.30000000" />
