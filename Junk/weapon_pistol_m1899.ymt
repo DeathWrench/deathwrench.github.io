@@ -1169,7 +1169,7 @@
             </Item>
           </AttachPoints>
           <FireProbeBone>ID_SKEL_ROOT</FireProbeBone>
-          <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload UsableInCover 0x5A3E5EDA 0xE8C586DD UsableOnFoot UsableClimbing HasLowCoverSwaps 0x6F3B1D01 NoLeftHandIK ForceEjectShellAfterFiring AllowCloseQuarterKills 0x75138DBF UseFPSAimIK UseFPSSecondaryMotion 0xCE1E0473 0x1152CE2C 0x1FCE1778 0x081F0BDD 0xC6550BE0 0x1FE95B8B 0xDCF43CF3 0x42D5F625 0x40B6CD20 0xD250DFDB 0xE0217110 0x46B4F2E8 0x07982641 0x27895875 0x323DB9E4 0xD62ED034 0xF0F89FD8</WeaponFlags>
+		  <WeaponFlags>CarriedInHand Gun CanLockonOnFoot CanLockonInVehicle CanFreeAim AnimReload UsableInCover 0x5A3E5EDA 0xE8C586DD UsableOnFoot UsableClimbing HasLowCoverSwaps 0x6F3B1D01 OnlyFireOneShot OnlyFireOneShotPerTriggerPress NoLeftHandIK ForceEjectShellAfterFiring AllowCloseQuarterKills 0x75138DBF UseFPSAimIK UseFPSSecondaryMotion 0xCE1E0473 0x1152CE2C 0x1FCE1778 0x081F0BDD 0xC6550BE0 0x1FE95B8B 0xDCF43CF3 0x42D5F625 0x40B6CD20 0xD250DFDB 0xE0217110 0x46B4F2E8 0x07982641 0x27895875 0x323DB9E4 0xD62ED034 0xF0F89FD8</WeaponFlags>
           <DefaultAIAttackMode>Shoot</DefaultAIAttackMode>
           <AIAttackModes>Shoot</AIAttackModes>
           <TintSpecValues>TINT_DEFAULT</TintSpecValues>
