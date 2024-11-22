@@ -1006,7 +1006,7 @@
           <UNK_MEMBER_0xC824F688 value="1.00000000" />
           <IsSpecialWeapon value="false" />
           <IsOutlawWeapon value="false" />
-          <UnlockWeaponHash>WEAPON_PISTOL_M1899</UnlockWeaponHash>
+          <UnlockWeaponHash>WEAPON_UNARMED</UnlockWeaponHash>
           <BrokenWeaponHash />
           <VehicleWeaponHash />
           <WeaponCamera>
