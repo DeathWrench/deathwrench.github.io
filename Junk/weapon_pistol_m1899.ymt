@@ -759,8 +759,8 @@
               <PlayerDamagedByPlayerModifier value="-1.00000000" />
             </Item>
              <Item>
-              <AmmoInfo>AMMO_REVOLVER</AmmoInfo>
-              <Name>DM_REVOLVER</Name>
+              <AmmoInfo>AMMO_PISTOL_SPLIT_POINT</AmmoInfo>
+              <Name>DM_AMMO_SPLIT_POINT</Name>
               <UNK_MEMBER_0x1F5DA5F4 value="0" />
               <Damage value="31.5.00000000" />
               <DamageType>BULLET</DamageType>
@@ -983,6 +983,7 @@
             <WindDisturbanceMuzzleInfoHashName>0xC9A04EB7</WindDisturbanceMuzzleInfoHashName>
             <WindDisturbanceBulletInfoHashName>0x300807A5</WindDisturbanceBulletInfoHashName>
           </WindDisturbance>          
+          <DegradationInfo>0x4B5D7C49</DegradationInfo>
           <FamiliarityInfo>0x6D7C4D28</FamiliarityInfo>
           <RumbleInfo>0x9EDDD16B</RumbleInfo>
           <WeaponRanges>
@@ -1006,7 +1007,7 @@
           <UNK_MEMBER_0xC824F688 value="1.00000000" />
           <IsSpecialWeapon value="false" />
           <IsOutlawWeapon value="false" />
-          <UnlockWeaponHash>WEAPON_REVOLVER_CATTLEMAN</UnlockWeaponHash>
+          <UnlockWeaponHash>WEAPON_PISTOL_M1899</UnlockWeaponHash>
           <BrokenWeaponHash />
           <VehicleWeaponHash />
           <WeaponCamera>
