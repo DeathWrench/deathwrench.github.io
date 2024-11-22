@@ -982,8 +982,7 @@
           <WindDisturbance>
             <WindDisturbanceMuzzleInfoHashName>0xC9A04EB7</WindDisturbanceMuzzleInfoHashName>
             <WindDisturbanceBulletInfoHashName>0x300807A5</WindDisturbanceBulletInfoHashName>
-          </WindDisturbance>          
-          <DegradationInfo>0x4B5D7C49</DegradationInfo>
+          </WindDisturbance>
           <FamiliarityInfo>0x6D7C4D28</FamiliarityInfo>
           <RumbleInfo>0x9EDDD16B</RumbleInfo>
           <WeaponRanges>
