@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uiSettingsDynamicGroupRoot>
+ <id>controls</id>
+ <version value="2" />
+ <groupMetaData type="groupMetaData">
+  <displayName>PM_PANE_CON</displayName>
+  <description>CONTROLS_GROUP_DESC</description>
+  <displayStyle>kSettingDisplay_StandardGroup</displayStyle>
+  <description1 />
+  <tipText />
+  <flags>kSettingFlags_SyncToProfile kSettingFlags_DontRestoreDefaultWhenBlocked</flags>
+ </groupMetaData>
+ <Settings>
+  <Item platform="x64|ggp">
+   <id>keyMapping</id>
+   <displayStyle>kSettingDisplay_Button</displayStyle>
+   <displayName>MO_KEY_MAPPING</displayName>
+   <description>MO_KEY_MAPPING_DESC</description>
+   <profileStatId>KeyMapping</profileStatId>
+   <transition>to_input_mappings</transition>
+   <dependencyConditions>
+    <Item>
+     <condition />
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item>
+   <id>invertLook</id>
+   <displayStyle>kSettingDisplay_Stepper</displayStyle>
+   <displayName>MO_INV</displayName>
+   <description>SETTING_DESC_INVERT_LOOK</description>
+   <profileStatId>ControlsInvertLook</profileStatId>
+   <tipText />
+   <dependencyConditions>
+    <Item platform="x64|ggp">
+     <condition type="condition">
+      <Condition />
+     </condition>
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item platform="x64">
+   <id>mouseType</id>
+   <displayStyle>kSettingDisplay_Stepper</displayStyle>
+   <displayName>MO_MOUSE_MODE</displayName>
+   <description>SETTING_DESC_MOUSE_MODE</description>
+   <profileStatId>ControlsMouseType</profileStatId>
+   <maximum value="2" />
+   <minimum value="0" />
+   <default value="0" />
+   <displayConverter>pause/settings/mouse_mode</displayConverter>
+   <tipText />
+   <dependencyConditions>
+    <Item>
+     <condition />
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item platform="x64|ggp">
+   <id>invertMouseLook</id>
+   <displayStyle>kSettingDisplay_Stepper</displayStyle>
+   <displayName>MO_MOUSE_INV</displayName>
+   <description>SETTING_DESC_INVERT_MOUSE_LOOK</description>
+   <profileStatId>ControlsInvertLook</profileStatId>
+   <tipText />
+   <dependencyConditions>
+    <Item>
+     <condition />
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item platform="x64|ggp">
+   <id>mouseSmoothing</id>
+   <displayStyle>kSettingDisplay_Slider</displayStyle>
+   <displayName>MO_MOUSE_SMOOTHING</displayName>
+   <description>SETTING_MUSE_SMOOTHING</description>
+   <profileStatId>ControlsMouseSmoothing</profileStatId>
+   <tipText />
+   <maximum value="4" />
+   <minimum value="0" />
+   <default value="1" />
+   <dependencyConditions>
+    <Item>
+     <condition />
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item>
+   <id>vibration</id>
+   <displayStyle>kSettingDisplay_Stepper</displayStyle>
+   <displayName>MO_VIB</displayName>
+   <description>SETTING_DESC_VIBRATION</description>
+   <profileStatId>ControlsVibration</profileStatId>
+   <tipText />
+   <default value="True" />
+   <dependencyConditions>
+    <Item platform="x64|ggp">
+     <condition type="condition">
+      <Condition />
+     </condition>
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+  <Item>
+   <id>photoModeInputEnabled</id>
+   <displayStyle>kSettingDisplay_Stepper</displayStyle>
+   <displayName>MO_PHOTO_MODE</displayName>
+   <description>SETTING_DESC_PHOTO_MODE</description>
+   <profileStatId>ControlsPhotoModeInputEnabled</profileStatId>
+   <tipText />
+   <default value="False" />
+   <dependencyConditions>
+    <Item>
+     <condition type="condition">
+      <Condition />
+     </condition>
+     <displayType>kSettingDependency_Hide</displayType>
+    </Item>
+   </dependencyConditions>
+  </Item>
+ </Settings>
+ <SubGroups>
+  <Item>
+   <id>targeting</id>
+   <groupMetaData type="groupMetaData">
+    <displayName>MO_TARGETING</displayName>
+    <description />
+    <tipText />
+    <displayStyle>kSettingDisplay_StandardGroup</displayStyle>
+   </groupMetaData>
+   <Settings>
+    <Item>
+     <id>lockOnModeOnFoot</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_TAR</displayName>
+     <description>SETTING_DESC_TARGETING_FOOT</description>
+     <profileStatId>ControlsTargetingLockOnModeOnFoot</profileStatId>
+     <tipText />
+     <maximum value="3" />
+     <default value="1" />
+     <displayConverter>pause/settings/targeting_mode</displayConverter>
+     <infoBox>info_box_targeting_mode</infoBox>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+     <flags>kSettingFlags_RequiresMultiplayerRestartForBucketing</flags>
+    </Item>
+    <Item>
+     <id>aimAssistModeOnFoot</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TAR_AIM_ASSIST</displayName>
+     <description>SETTING_DESC_AIM_ASSIST_FOOT</description>
+     <profileStatId>ControlsTargetingAimAssistModeOnFoot</profileStatId>
+     <tipText />
+     <maximum value="4" />
+     <default value="4" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>lockOnModeInVehicle</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_TAR_VEH</displayName>
+     <description>SETTING_DESC_TARGETING_HORSE</description>
+     <profileStatId>ControlsTargetingLockOnModeInVehicle</profileStatId>
+     <tipText />
+     <maximum value="3" />
+     <default value="1" />
+     <displayConverter>pause/settings/targeting_mode_vehicle</displayConverter>
+     <infoBox>info_box_targeting_mode</infoBox>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+     <flags>kSettingFlags_RequiresMultiplayerRestartForBucketing</flags>
+    </Item>
+    <Item>
+     <id>aimAssistModeInVehicle</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TAR_VEH_AIM_ASSIST</displayName>
+     <description>SETTING_DESC_AIM_ASSIST_HORSE</description>
+     <profileStatId>ControlsTargetingAimAssistModeInVehicle</profileStatId>
+     <tipText />
+     <maximum value="4" />
+     <default value="4" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>automaticPinSwitching</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_AUTO_PIN_SWITCH</displayName>
+     <description>SETTING_DESC_AUTO_PIN_SWITCH</description>
+     <default value="False" />
+    </Item>
+   </Settings>
+  </Item>
+  <Item>
+   <id>thirdPerson</id>
+   <groupMetaData type="groupMetaData">
+    <displayName>MO_THIRD_PERSON</displayName>
+    <description />
+    <tipText />
+    <displayStyle>kSettingDisplay_StandardGroup</displayStyle>
+   </groupMetaData>
+   <Settings>
+    <Item>
+     <id>config</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_CTY_TP</displayName>
+     <description>SETTING_DESC_CTRL_CONFIG_TP</description>
+     <profileStatId>ControlsThirdPersonConfig</profileStatId>
+     <tipText />
+     <maximum value="11" />
+     <displayConverter>pause/settings/control_type</displayConverter>
+     <infoBox>info_box_controller</infoBox>
+     <transition>third_person_controller</transition>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>horseRelative</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_HORSE</displayName>
+     <description>SETTING_DESC_HORSE_RELATIVE</description>
+     <profileStatId>ControlsThirdPersonHorseRelative</profileStatId>
+     <tipText />
+     <displayConverter>pause/settings/horse_control</displayConverter>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>horseRelativeWhenAiming</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_HORSE_AIMING</displayName>
+     <description>SETTING_DESC_HORSE_RELATIVE</description>
+     <profileStatId>ControlsThirdPersonHorseRelative</profileStatId>
+     <tipText />
+     <displayConverter>pause/settings/horse_control</displayConverter>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>lookSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_LOOK_SENS</displayName>
+     <description>SETTING_DESC_LOOK_SENS_TP</description>
+     <profileStatId>ControlsThirdPersonLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_SENS</displayName>
+     <description>SETTING_DESC_AIM_SENS_TP</description>
+     <profileStatId>ControlsThirdPersonAimSensitivity</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimAcceleration</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TPS_ACCEL</displayName>
+     <description>SETTING_DESC_LOOK_ACCEL_TP</description>
+     <profileStatId>ControlsThirdPersonAimAcceleration</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimDeadZone</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TPS_DZONE</displayName>
+     <description>SETTING_DESC_AIM_DEADZONE_TP</description>
+     <profileStatId>ControlsThirdPersonAimDeadZone</profileStatId>
+     <tipText />
+     <maximum value="10" />
+     <default value="2" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>horseRelativeKeyboard</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_HORSE_KEYBOARD</displayName>
+     <description>SETTING_DESC_HORSE_RELATIVE</description>
+     <profileStatId>ControlsThirdPersonHorseRelative</profileStatId>
+     <tipText />
+     <displayConverter>pause/settings/horse_control</displayConverter>
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>horseRelativeWhenAimingKeyboard</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_HORSE_AIMING_KEYBOARD</displayName>
+     <description>SETTING_DESC_HORSE_RELATIVE</description>
+     <profileStatId>ControlsThirdPersonHorseRelative</profileStatId>
+     <tipText />
+     <displayConverter>pause/settings/horse_control</displayConverter>
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>mouseLookSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_MOUSE_LOOK_SENS</displayName>
+     <description>SETTING_DESC_MOUSE_LOOK_SENS_TP</description>
+     <profileStatId>ControlsThirdPersonMouseLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="200" />
+     <default value="5" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>mouseAimSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_MOUSE_AIM_SENS</displayName>
+     <description>SETTING_DESC_MOUSE_LOOK_SENS_TP</description>
+     <profileStatId>ControlsThirdPersonMouseLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="200" />
+     <default value="5" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+   </Settings>
+  </Item>
+  <Item>
+   <id>firstPerson</id>
+   <groupMetaData type="groupMetaData">
+    <displayName>MO_FIRST_PERSON</displayName>
+    <description />
+    <tipText />
+    <displayStyle>kSettingDisplay_StandardGroup</displayStyle>
+   </groupMetaData>
+   <Settings>
+    <Item>
+     <id>config</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_CTY_FP</displayName>
+     <description>SETTING_DESC_CTRL_CONFIG_FP</description>
+     <profileStatId>ControlsFirstPersonConfig</profileStatId>
+     <tipText />
+     <maximum value="11" />
+     <displayConverter>pause/settings/control_type</displayConverter>
+     <infoBox>info_box_controller</infoBox>
+     <transition>first_person_controller</transition>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>lookSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_LOOK_SENS</displayName>
+     <description>SETTING_DESC_LOOK_SENS_FP</description>
+     <profileStatId>ControlsFirstPersonLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_SENS</displayName>
+     <description>SETTING_DESC_AIM_SENS_FP</description>
+     <profileStatId>ControlsFirstPersonAimSensitivity</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimAcceleration</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TPS_ACCEL</displayName>
+     <description>SETTING_DESC_LOOK_ACCEL_FP</description>
+     <profileStatId>ControlsFirstPersonAimAcceleration</profileStatId>
+     <tipText />
+     <maximum value="144" />
+     <default value="7" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>aimDeadZone</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_TPS_DZONE</displayName>
+     <description>SETTING_DESC_AIM_DEADZONE_FP</description>
+     <profileStatId>ControlsFirstPersonAimDeadZone</profileStatId>
+     <tipText />
+     <maximum value="10" />
+     <default value="2" />
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>mouseLookSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_MOUSE_LOOK_SENS</displayName>
+     <description>SETTING_DESC_MOUSE_LOOK_SENS_FP</description>
+     <profileStatId>ControlsThirdPersonMouseLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="200" />
+     <default value="5" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>mouseAimSensitivity</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_MOUSE_AIM_SENS</displayName>
+     <description>SETTING_DESC_MOUSE_LOOK_SENS_FP</description>
+     <profileStatId>ControlsThirdPersonMouseLookSensitivity</profileStatId>
+     <tipText />
+     <maximum value="200" />
+     <default value="5" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+   </Settings>
+  </Item>
+  <Item>
+   <id>accessibility</id>
+   <groupMetaData type="groupMetaData">
+    <displayName>MO_ACCESSIBILITY</displayName>
+    <description />
+    <tipText />
+    <displayStyle>kSettingDisplay_StandardGroup</displayStyle>
+   </groupMetaData>
+   <Settings>
+    <Item platform="x64|ggp">
+     <id>EnableAccessibilitySprintingForPlayer</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_ACS_MODE</displayName>
+     <description>SETTING_DESC_ACS_RUN_MODE</description>
+     <profileStatId>ControlsAccessibilityEnableAcsRunMode</profileStatId>
+     <tipText />
+     <default value="False" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item platform="x64|ggp">
+     <id>EnableAccessibilitySprintingForHorse</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_ACS_HORSE_MODE</displayName>
+     <description>SETTING_DESC_ACS_HORSE_RUN_MODE</description>
+     <profileStatId>ControlsAccessibilityEnableAcsHorseRunMode</profileStatId>
+     <tipText />
+     <default value="False" />
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>EnableToggleToRunMode</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_RUN_MODE</displayName>
+     <description>SETTING_DESC_RUN_MODE</description>
+     <profileStatId>ControlsAccessibilityEnableToggleToRunMode</profileStatId>
+     <tipText />
+     <default value="False" />
+     <displayConverter>pause/settings/running_mode</displayConverter>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>repeatPress</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_REPEAT_PRESS</displayName>
+     <description>SETTING_DESC_TAP_ASSIST</description>
+     <profileStatId>ControlsAccessibilityRepeatPress</profileStatId>
+     <tipText />
+     <maximum value="4" />
+     <default value="0" />
+     <displayConverter>pause/settings/repeat_press</displayConverter>
+    </Item>
+    <Item>
+     <id>holdDelay</id>
+     <displayStyle>kSettingDisplay_Slider</displayStyle>
+     <displayName>MO_HOLD_DELAY</displayName>
+     <description>SETTING_DESC_TAP_HOLD_DELAY</description>
+     <profileStatId>ControlsAccessibilityHoldDelay</profileStatId>
+     <tipText />
+     <maximum value="10" />
+     <default value="0" />
+    </Item>
+    <Item platform="x64|ggp">
+     <id>EnableToggleToAimMode</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_TOGGLE_AIM_MODE</displayName>
+     <description>SETTING_DESC_TOGGLE_AIM_MODE</description>
+     <profileStatId>ControlsAccessibilityEnableToggleToAimMode</profileStatId>
+     <tipText />
+     <default value="False" />
+     <displayConverter>pause/settings/toggle_aim_mode</displayConverter>
+     <dependencyConditions>
+      <Item>
+       <condition />
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+    <Item>
+     <id>EnableFishingHoldToReel</id>
+     <displayStyle>kSettingDisplay_Stepper</displayStyle>
+     <displayName>MO_FISHING_HOLD_TO_REEL</displayName>
+     <description>SETTING_DESC_FISHING_HOLD_TO_REEL</description>
+     <profileStatId>ControlsAccessibilityEnableFishingHoldToReel</profileStatId>
+     <tipText />
+     <default value="False" />
+     <displayConverter>pause/settings/on_off</displayConverter>
+     <dependencyConditions>
+      <Item platform="x64|ggp">
+       <condition type="condition">
+        <Condition />
+       </condition>
+       <displayType>kSettingDependency_Hide</displayType>
+      </Item>
+     </dependencyConditions>
+    </Item>
+   </Settings>
+  </Item>
+ </SubGroups>
+</uiSettingsDynamicGroupRoot>
