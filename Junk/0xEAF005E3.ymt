@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<UIMovieView xmlns:xi="http://www.w3.org/2001/XInclude">
+  <Name>PAUSEMENU_INDEX</Name>
+  <MovieFileName>pausemenu_assets</MovieFileName>
+  <UseLayoutEngine value="true"/>
+  <LayoutAttachmentOverride>safeframe_main_screen</LayoutAttachmentOverride>
+  <LayoutParams type="rage__LayoutParamInstanceAsset">
+    <params>
+      <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+      <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+    </params>
+  </LayoutParams>
+  <BehaviorSet>
+    <Behaviors>
+      <Item type="uiAdornmentHostBehavior">
+        <AdornmentID>highlight_adornment_tiled</AdornmentID>
+        <TemplateID>highlight_adornment_tiled</TemplateID>
+      </Item>
+      <Item type="uiAdornmentHostBehavior">
+        <AdornmentID>hover_adornment_tiled</AdornmentID>
+        <TemplateID>hover_adornment_tiled</TemplateID>
+      </Item>
+    </Behaviors>
+  </BehaviorSet>
+  <Children>
+    <Item type="UIGrid">
+      <Name>PAUSEMENU_GRID</Name>
+      <UseLayoutEngine value="true"/>
+      <LayoutParams type="rage__LayoutParamInstanceAsset">
+        <params>
+          <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+          <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+          <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+          <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+        </params>
+      </LayoutParams>
+      <SpecializedLayoutParams>
+        <Item type="rage__SpecializedParamInstanceAsset">
+          <params type="rage__GridParams">
+            <columns>
+              <Item>
+                <size value="5"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+              <Item>
+                <size value="20"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+              <Item>
+                <size value="10"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+              <Item>
+                <size value="65"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+            </columns>
+            <rows>
+              <Item>
+                <size value="45"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+              <Item>
+                <size value="50"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+              <Item>
+                <size value="5"/>
+                <type>SIZING_TYPE_STAR</type>
+              </Item>
+            </rows>
+          </params>
+        </Item>
+      </SpecializedLayoutParams>
+      <Children>
+        <Item type="UIRectangle">
+          <Name>RECT_BackgroundMain</Name>
+          <Visible value="false"/>
+          <Color>COLOR_BLACK</Color>
+          <UseLayoutEngine value="true"/>
+          <LayoutParams type="rage__LayoutParamInstanceAsset">
+            <params>
+              <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+              <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+            </params>
+          </LayoutParams>
+          <SpecializedLayoutParams>
+            <Item type="rage__SpecializedParamInstanceAsset">
+              <params type="rage__GridChildParams">
+                <row value="0"/>
+                <rowSpan value="3"/>
+                <column value="0"/>
+                <columnSpan value="4"/>
+              </params>
+            </Item>
+          </SpecializedLayoutParams>
+          <BehaviorSet>
+            <Behaviors>
+              <Item type="uiBehaviorHudVisibility">
+                <SlotType>HUD_VISIBILITY_SLOT_PAUSEMENU_BACKGROUND</SlotType>
+                <Animations>
+                  <Item key="HUD_VISIBILITY_STATE_ANIMATED_SHOW">
+                    <Animation>simple_fade_in</Animation>
+                  </Item>
+                  <Item key="HUD_VISIBILITY_STATE_ANIMATED_HIDE">
+                    <Animation>simple_fade_out</Animation>
+                  </Item>
+                </Animations>
+              </Item>
+            </Behaviors>
+          </BehaviorSet>
+        </Item>
+        <Item type="UIPanel">
+          <Name>PAUSEMENU_LIST_HOST_MASK</Name>
+          <UseLayoutEngine value="true"/>
+          <Rotation value="-15"/>
+          <Depth value="0"/>
+          <LayoutParams type="rage__LayoutParamInstanceAsset">
+            <params>
+              <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+              <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+            </params>
+          </LayoutParams>
+          <BehaviorSet>
+            <Behaviors>
+              <Item type="uiDisplayObjectBehavior">
+                <SymbolName>fcContainer</SymbolName>
+              </Item>
+            </Behaviors>
+          </BehaviorSet>
+          <SpecializedLayoutParams>
+            <Item type="rage__SpecializedParamInstanceAsset">
+              <params type="rage__GridChildParams">
+                <row value="0"/>
+                <rowSpan value="3"/>
+                <column value="0"/>
+                <columnSpan value="3"/>
+              </params>
+            </Item>
+          </SpecializedLayoutParams>
+          <Children>
+            <Item type="UIRectangle">
+              <Name>REC_INNER_MASK</Name>
+              <Visible value="true"/>
+              <UseLayoutEngine value="true"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                </params>
+              </LayoutParams>
+              <BehaviorSet>
+                <Behaviors>
+                  <Item type="uiProportionalOffsetBehavior">
+                    <HorizontalRatio value="-0.39000000"/>
+                    <VerticalRatio value="-0.13000000"/>
+                    <Context>
+                      <Path>^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiProportionalPaddingBehavior">
+                    <HorizontalRatio value="0.10000000"/>
+                    <VerticalRatio value="0.30000000"/>
+                    <Context>
+                      <Path>^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiMaskBehavior">
+                    <Context>
+                      <Path>^.^.PAUSEMENU_LIST_HOST_ANIM</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                </Behaviors>
+              </BehaviorSet>
+              <Color>COLOR_BLUE</Color>
+            </Item>
+          </Children>
+        </Item>
+        <Item type="UIPanel">
+          <Name>PAN_INK_ANIMS_HOLDER</Name>
+          <UseLayoutEngine value="true"/>
+          <Depth value="1"/>
+          <LayoutParams type="rage__LayoutParamInstanceAsset">
+            <params>
+              <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+              <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+            </params>
+          </LayoutParams>
+          <BehaviorSet>
+            <Behaviors>
+              <Item type="uiDisplayObjectBehavior">
+                <SymbolName>fcContainer</SymbolName>
+              </Item>
+            </Behaviors>
+          </BehaviorSet>
+          <SpecializedLayoutParams>
+            <Item type="rage__SpecializedParamInstanceAsset">
+              <params type="rage__GridChildParams">
+                <row value="0"/>
+                <rowSpan value="3"/>
+                <column value="0"/>
+                <columnSpan value="3"/>
+              </params>
+            </Item>
+          </SpecializedLayoutParams>
+          <Children>
+            <Item type="UIObject">
+              <Name>OBJ_PAUSE_ANIM_ENTER</Name>
+              <UseLayoutEngine value="true"/>
+              <Style>PAUSE_NAV_BG</Style>
+              <Rotation value="-15"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                </params>
+              </LayoutParams>
+              <BehaviorSet>
+                <Behaviors>
+                  <Item type="uiProportionalOffsetBehavior">
+                    <Name>myname</Name>
+                    <HorizontalRatio value="-0.20000000"/>
+                    <VerticalRatio value="-0.10000000"/>
+                    <Context>
+                      <Path>^.^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiProportionalPaddingBehavior">
+                    <Name>myname2</Name>
+                    <HorizontalRatio value="0.00000000"/>
+                    <VerticalRatio value="0.20000000"/>
+                    <Context>
+                      <Path>^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiDisplayObjectBehavior">
+                    <SymbolName>enter_anim</SymbolName>
+                  </Item>
+                </Behaviors>
+              </BehaviorSet>
+            </Item>
+            <Item type="UIObject">
+              <Name>OBJ_PAUSE_ANIM_EXIT</Name>
+              <UseLayoutEngine value="true"/>
+              <Style>PAUSE_NAV_BG</Style>
+              <Rotation value="-15"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                </params>
+              </LayoutParams>
+              <BehaviorSet>
+                <Behaviors>
+                  <Item type="uiProportionalOffsetBehavior">
+                    <HorizontalRatio value="-0.20000000"/>
+                    <VerticalRatio value="-0.10000000"/>
+                    <Context>
+                      <Path>^.^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiProportionalPaddingBehavior">
+                    <HorizontalRatio value="0.00000000"/>
+                    <VerticalRatio value="0.20000000"/>
+                    <Context>
+                      <Path>^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiDisplayObjectBehavior">
+                    <SymbolName>exit_anim</SymbolName>
+                  </Item>
+                </Behaviors>
+              </BehaviorSet>
+            </Item>
+          </Children>
+        </Item>
+        <Item type="UIPanel">
+          <Name>PAUSEMENU_LIST_HOST_ANIM</Name>
+          <UseLayoutEngine value="true"/>
+          <Depth value="2"/>
+          <LayoutParams type="rage__LayoutParamInstanceAsset">
+            <params>
+              <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+              <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+            </params>
+          </LayoutParams>
+          <BehaviorSet>
+            <Behaviors>
+              <Item type="uiDisplayObjectBehavior">
+                <SymbolName>fcContainer</SymbolName>
+              </Item>
+            </Behaviors>
+          </BehaviorSet>
+          <SpecializedLayoutParams>
+            <Item type="rage__SpecializedParamInstanceAsset">
+              <params type="rage__GridChildParams">
+                <row value="0"/>
+                <rowSpan value="3"/>
+                <column value="0"/>
+                <columnSpan value="3"/>
+              </params>
+            </Item>
+          </SpecializedLayoutParams>
+          <Children>
+            <Item type="UIImage">
+              <Name>IMG_BG_RED_PANEL</Name>
+              <TextureDictionary>pausemenu_index</TextureDictionary>
+              <Texture>PAUSE_NAV_BG</Texture>
+              <Style>PAUSE_NAV_BG</Style>
+              <UseLayoutEngine value="true"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                </params>
+              </LayoutParams>
+              <SpecializedLayoutParams>
+                <Item type="rage__SpecializedParamInstanceAsset">
+                  <params type="rage__fwuiStretchParams">
+                    <Stretch>FILL</Stretch>
+                  </params>
+                </Item>
+              </SpecializedLayoutParams>
+            </Item>
+            <Item type="UIGrid">
+              <Name>GRD_LIST_HOST_SPACER</Name>
+              <UseLayoutEngine value="true"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                </params>
+              </LayoutParams>
+              <BehaviorSet>
+                <Behaviors>
+                  <Item type="uiDisplayObjectBehavior">
+                    <SymbolName>fcContainer</SymbolName>
+                  </Item>
+                </Behaviors>
+              </BehaviorSet>
+              <SpecializedLayoutParams>
+                <Item type="rage__SpecializedParamInstanceAsset">
+                  <params type="rage__GridParams">
+                    <columns>
+                      <Item>
+                        <size value="5"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                      <Item>
+                        <size value="20"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                      <Item>
+                        <size value="10"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                    </columns>
+                    <rows>
+                      <Item>
+                        <size value="45"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                      <Item>
+                        <size value="50"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                      <Item>
+                        <size value="5"/>
+                        <type>SIZING_TYPE_STAR</type>
+                      </Item>
+                    </rows>
+                  </params>
+                </Item>
+              </SpecializedLayoutParams>
+                <Children>
+                <Item type="UIGrid">
+                  <Name>GRD_CLOCKLAYOUT</Name>
+					<Scale x="0.600000" y="0.600000" />
+                  <Rotation value="0"/>
+                  <UseLayoutEngine value="true"/>
+                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                    <params>
+                      <leftMargin value="-125.000000" />
+                      <topMargin value="1000.000000" />
+                      <rightMargin value="0.000000" />
+                      <bottomMargin value="-225.000000" />
+                      <horizontalAlignment>HALIGN_LEFT</horizontalAlignment>
+                      <verticalAlignment>VALIGN_BOTTOM</verticalAlignment>
+                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                    </params>
+                  </LayoutParams>
+                  <BehaviorSet>
+                    <Behaviors>
+                      <Item type="uiDisplayObjectBehavior">
+                        <SymbolName>fcContainer</SymbolName>
+                      </Item>
+                    </Behaviors>
+                  </BehaviorSet>
+                  <SpecializedLayoutParams>
+                    <Item type="rage__SpecializedParamInstanceAsset">
+                      <params type="rage__GridParams">
+                        <columns>
+                          <Item>
+                            <size value="2"/>
+                            <type>SIZING_TYPE_STAR</type>
+                          </Item>
+                          <Item>
+                            <size value="3"/>
+                            <type>SIZING_TYPE_STAR</type>
+                          </Item>
+                        </columns>
+                        <rows>
+                          <Item>
+                            <size value="27"/>
+                            <type>SIZING_TYPE_PIXEL</type>
+                          </Item>
+                          <Item>
+                            <size value="1"/>
+                            <type>SIZING_TYPE_STAR</type>
+                          </Item>
+                        </rows>
+                      </params>
+                    </Item>
+                    <Item type="rage__SpecializedParamInstanceAsset">
+                      <params type="rage__GridChildParams">
+                        <row value="0"/>
+                        <column value="1"/>
+                      </params>
+                    </Item>
+                  </SpecializedLayoutParams>
+                  <Children>
+                    <Item type="UIViewbox">
+                      <Name>VB_CLOCKSCALER</Name>
+                      <UseLayoutEngine value="true"/>
+                      <LayoutParams type="rage__LayoutParamInstanceAsset">
+                        <params>
+                          <horizontalAlignment>HALIGN_RIGHT</horizontalAlignment>
+                          <verticalAlignment>VALIGN_TOP</verticalAlignment>
+                          <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                          <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                        </params>
+                      </LayoutParams>
+                      <SpecializedLayoutParams>
+                        <Item type="rage__SpecializedParamInstanceAsset">
+                          <params type="rage__ViewboxParams">
+                            <stretchDirection />
+                            <stretchType>STRETCH_TYPE_NONE</stretchType>
+                          </params>
+                        </Item>
+                        <Item type="rage__SpecializedParamInstanceAsset">
+                          <params type="rage__GridChildParams">
+                            <row value="1"/>
+                            <column value="0"/>
+                          </params>
+                        </Item>
+                      </SpecializedLayoutParams>
+                      <Children>
+                        <Item type="UIGrid">
+                          <Name>GRD_CLOCK</Name>
+                          <UseLayoutEngine value="true"/>
+                          <LayoutParams type="rage__LayoutParamInstanceAsset">
+                            <params>
+                              <horizontalAlignment>HALIGN_RIGHT</horizontalAlignment>
+                              <verticalAlignment>VALIGN_TOP</verticalAlignment>
+                              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                            </params>
+                          </LayoutParams>
+                          <SpecializedLayoutParams>
+                            <Item type="rage__SpecializedParamInstanceAsset">
+                              <params type="rage__GridParams">
+                                <columns>
+                                  <Item>
+                                    <type>SIZING_TYPE_AUTO</type>
+                                  </Item>
+                                </columns>
+                                <rows>
+                                  <Item>
+                                    <type>SIZING_TYPE_AUTO</type>
+                                  </Item>
+                                  <Item>
+                                    <type>SIZING_TYPE_AUTO</type>
+                                  </Item>
+                                </rows>
+                              </params>
+                            </Item>
+                          </SpecializedLayoutParams>
+                          <Children>
+                            <Item type="UIImage">
+                              <Name>IMG_CLOCKTOP</Name>
+                              <Color>COLOR_WHITE</Color>
+                              <TextureDictionary>pausemenu_index</TextureDictionary>
+                              <Texture>POCKETWATCH_TOP</Texture>
+                              <UseLayoutEngine value="true"/>
+                              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                <params>
+                                  <horizontalAlignment>HALIGN_RIGHT</horizontalAlignment>
+                                  <verticalAlignment>VALIGN_TOP</verticalAlignment>
+                                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                </params>
+                              </LayoutParams>
+                              <SpecializedLayoutParams>
+                                <Item type="rage__SpecializedParamInstanceAsset">
+                                  <params type="rage__fwuiStretchParams">
+                                    <Stretch>NONE</Stretch>
+                                  </params>
+                                </Item>
+                              </SpecializedLayoutParams>
+                            </Item>
+                            <Item type="UIPanel">
+                              <Name>PAN_CLOCK</Name>
+                              <UseLayoutEngine value="true"/>
+                              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                <params>
+                                  <horizontalAlignment>HALIGN_CENTER</horizontalAlignment>
+                                  <verticalAlignment>VALIGN_TOP</verticalAlignment>
+                                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                </params>
+                              </LayoutParams>
+                              <SpecializedLayoutParams>
+                                <Item type="rage__SpecializedParamInstanceAsset">
+                                  <params type="rage__GridChildParams">
+                                    <row value="1"/>
+                                    <column value="0"/>
+                                  </params>
+                                </Item>
+                              </SpecializedLayoutParams>
+                              <Children>
+                                <Item type="UIImage">
+                                  <Name>IMG_CLOCK</Name>
+                                  <Color>COLOR_WHITE</Color>
+                                  <TextureDictionary>pausemenu_index</TextureDictionary>
+                                  <Texture>POCKETWATCH_FACE</Texture>
+                                  <UseLayoutEngine value="true"/>
+                                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                    <params>
+                                      <horizontalAlignment>HALIGN_CENTER</horizontalAlignment>
+                                      <verticalAlignment>VALIGN_CENTER</verticalAlignment>
+                                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                    </params>
+                                  </LayoutParams>
+                                  <SpecializedLayoutParams>
+                                    <Item type="rage__SpecializedParamInstanceAsset">
+                                      <params type="rage__fwuiStretchParams">
+                                        <Stretch>NONE</Stretch>
+                                      </params>
+                                    </Item>
+                                  </SpecializedLayoutParams>
+                                </Item>
+                                <Item type="UIImage">
+                                  <Name>IMG_CLOCKHOUR</Name>
+                                  <Color>COLOR_BLACK</Color>
+                                  <TextureDictionary>pausemenu_index</TextureDictionary>
+                                  <Texture>POCKETWATCH_SMALL_HAND</Texture>
+								  <Scale x="1.000000" y="1.140000" />
+                                  <Rotation value="0"/>
+                                  <UseLayoutEngine value="true"/>
+                                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                    <params>
+                                      <horizontalAlignment>HALIGN_CENTER</horizontalAlignment>
+                                      <verticalAlignment>VALIGN_CENTER</verticalAlignment>
+                                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                    </params>
+                                  </LayoutParams>
+                                  <SpecializedLayoutParams>
+                                    <Item type="rage__SpecializedParamInstanceAsset">
+                                      <params type="rage__fwuiStretchParams">
+                                        <Stretch>NONE</Stretch>
+                                      </params>
+                                    </Item>
+                                  </SpecializedLayoutParams>
+                                  <MemberBindings>
+                                    <Item>
+                                      <MemberName>Rotation</MemberName>
+                                      <Setup>
+                                        <Path>DateAndTime.GameTimer.HoursWithIntervals</Path>
+                                        <PathType>PATH_ABSOLUTE</PathType>
+                                      </Setup>
+                                      <Converter type="rage__fwuiTimeAngleValueConversion">
+                                        <TimeFormat>ANGLE_HOURS</TimeFormat>
+                                      </Converter>
+                                    </Item>
+                                  </MemberBindings>
+                                </Item>
+                                <Item type="UIImage">
+                                  <Name>IMG_CLOCKMINS</Name>
+                                  <Color>COLOR_BLACK</Color>
+                                  <TextureDictionary>pausemenu_index</TextureDictionary>
+                                  <Texture>POCKETWATCH_BIG_HAND</Texture>
+								  <Scale x="1.000000" y="1.800000" />
+                                  <Rotation value="0"/>
+                                  <UseLayoutEngine value="true"/>
+                                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                    <params>
+                                      <horizontalAlignment>HALIGN_CENTER</horizontalAlignment>
+                                      <verticalAlignment>VALIGN_CENTER</verticalAlignment>
+                                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                    </params>
+                                  </LayoutParams>
+                                  <SpecializedLayoutParams>
+                                    <Item type="rage__SpecializedParamInstanceAsset">
+                                      <params type="rage__fwuiStretchParams">
+                                        <Stretch>NONE</Stretch>
+                                      </params>
+                                    </Item>
+                                  </SpecializedLayoutParams>
+                                  <MemberBindings>
+                                    <Item>
+                                      <MemberName>Rotation</MemberName>
+                                      <Setup>
+                                        <Path>DateAndTime.GameTimer.Minutes</Path>
+                                        <PathType>PATH_ABSOLUTE</PathType>
+                                      </Setup>
+                                      <Converter type="rage__fwuiTimeAngleValueConversion">
+                                        <TimeFormat>ANGLE_MINUTES</TimeFormat>
+                                      </Converter>
+                                    </Item>
+                                  </MemberBindings>
+                                </Item>
+                                <Item type="UIImage">
+                                  <Name>IMG_CLOCKCENTER</Name>
+                                  <Color>COLOR_WHITE</Color>
+                                  <TextureDictionary>pausemenu_index</TextureDictionary>
+                                  <Texture>POCKETWATCH_CENTER</Texture>
+								  <Pos x="90000000.000000" y="10000.000000" />
+								  <Scale x="1.000000" y="1.000000" />
+                                  <UseLayoutEngine value="true"/>
+                                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                                    <params>
+                                      <horizontalAlignment>HALIGN_CENTER</horizontalAlignment>
+                                      <verticalAlignment>VALIGN_CENTER</verticalAlignment>
+                                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                                    </params>
+                                  </LayoutParams>
+                                  <SpecializedLayoutParams>
+                                    <Item type="rage__SpecializedParamInstanceAsset">
+                                      <params type="rage__fwuiStretchParams">
+                                        <Stretch>NONE</Stretch>
+                                      </params>
+                                    </Item>
+                                  </SpecializedLayoutParams>
+                                </Item>
+                              </Children>
+                            </Item>
+                          </Children>
+                        </Item>
+                      </Children>
+                    </Item>
+                  </Children>
+                </Item>
+                <Item type="UIViewbox">
+                  <Name>PAUSEMENU_LIST_VB</Name>
+                  <UseLayoutEngine value="true"/>
+                  <LayoutParams type="rage__LayoutParamInstanceAsset">
+                    <params>
+                      <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                      <verticalAlignment>VALIGN_BOTTOM</verticalAlignment>
+                      <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                      <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                    </params>
+                  </LayoutParams>
+                  <SpecializedLayoutParams>
+                    <Item type="rage__SpecializedParamInstanceAsset">
+                      <params type="rage__ViewboxParams">
+                        <stretchDirection>STRETCH_DIRECTION_BOTH</stretchDirection>
+                        <stretchType>STRETCH_TYPE_UNIFORM</stretchType>
+                      </params>
+                    </Item>
+                    <Item type="rage__SpecializedParamInstanceAsset">
+                      <params type="rage__GridChildParams">
+                        <row value="1"/>
+                        <column value="1"/>
+                      </params>
+                    </Item>
+                  </SpecializedLayoutParams>
+                  <Children>
+                    <Item type="UIPanel">
+                      <Name>PAUSEMENU_LIST_HOST</Name>
+                      <UseLayoutEngine value="true"/>
+                      <LayoutParams type="rage__LayoutParamInstanceAsset">
+                        <params>
+                          <horizontalAlignment>HALIGN_LEFT</horizontalAlignment>
+                          <verticalAlignment>VALIGN_TOP</verticalAlignment>
+                          <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                          <widthContentMode>CONTENT_MODE_RAW</widthContentMode>
+                          <width value="275"/>
+                        </params>
+                      </LayoutParams>
+                      <BehaviorSet>
+                        <Behaviors>
+                          <Item type="uiDisplayObjectBehavior">
+                            <SymbolName>fcContainer</SymbolName>
+                          </Item>
+                        </Behaviors>
+                      </BehaviorSet>
+                    </Item>
+                  </Children>
+                </Item>
+              </Children>
+            </Item>
+          </Children>
+        </Item>
+        <Item type="UIPanel">
+          <Name>PAUSEMENU_PAGE_HOST_ANIM</Name>
+          <UseLayoutEngine value="true"/>
+          <Depth value="3"/>
+          <LayoutParams type="rage__LayoutParamInstanceAsset">
+            <params>
+              <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+              <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+              <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+              <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+            </params>
+          </LayoutParams>
+          <BehaviorSet>
+            <Behaviors>
+              <Item type="uiDisplayObjectBehavior">
+                <SymbolName>fcContainer</SymbolName>
+              </Item>
+            </Behaviors>
+          </BehaviorSet>
+          <SpecializedLayoutParams>
+            <Item type="rage__SpecializedParamInstanceAsset">
+              <params type="rage__GridChildParams">
+                <row value="0"/>
+                <rowSpan value="3"/>
+                <column value="0"/>
+                <columnSpan value="4"/>
+              </params>
+            </Item>
+          </SpecializedLayoutParams>
+          <Children>
+            <Item type="UIPanel">
+              <Name>PAUSEMENU_PAGE_HOST</Name>
+              <UseLayoutEngine value="true"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                </params>
+              </LayoutParams>
+            </Item>
+            <Item type="UIRectangle">
+              <Name>PAUSEMENU_PAGE_HOST_MASK</Name>
+              <Rotation value="-12"/>
+              <Visible value="false"/>
+              <UseLayoutEngine value="true"/>
+              <LayoutParams type="rage__LayoutParamInstanceAsset">
+                <params>
+                  <horizontalAlignment>HALIGN_STRETCH</horizontalAlignment>
+                  <verticalAlignment>VALIGN_STRETCH</verticalAlignment>
+                  <widthContentMode>CONTENT_MODE_AUTO</widthContentMode>
+                  <heightContentMode>CONTENT_MODE_AUTO</heightContentMode>
+                </params>
+              </LayoutParams>
+              <BehaviorSet>
+                <Behaviors>
+                  <Item type="uiMaskRetargetableBehavior"/>
+                  <Item type="uiProportionalOffsetBehavior">
+                    <HorizontalRatio value="-0.10000000"/>
+                    <VerticalRatio value="-0.21000000"/>
+                    <Context>
+                      <Path>^.^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                  <Item type="uiProportionalPaddingBehavior">
+                    <HorizontalRatio value="0.20000000"/>
+                    <VerticalRatio value="0.42000000"/>
+                    <Context>
+                      <Path>^.^</Path>
+                      <PathType>PATH_LOCAL</PathType>
+                    </Context>
+                  </Item>
+                </Behaviors>
+              </BehaviorSet>
+              <Color>COLOR_RED</Color>
+            </Item>
+          </Children>
+        </Item>
+      </Children>
+    </Item>
+  </Children>
+</UIMovieView>
